@@ -35,7 +35,6 @@ func resourceFullConfig() *schema.Resource {
 				Type:     schema.TypeString,
 				Required: false,
 				Optional: true,
-				//Computed: true,
 			},
 		},
 	}
