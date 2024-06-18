@@ -3,8 +3,7 @@ module github.com/aruba/terraform-provider-aoscx
 go 1.18
 
 require (
-	github.com/aruba/aoscxgo v0.0.0-20230117213530-28f54e4dca6e
-	github.com/aruba/terraform-provider-aoscx v0.0.0-20230118200912-3bcd78b23307
+	github.com/aruba/aoscxgo v0.0.1-pre
 	github.com/hashicorp/terraform-plugin-sdk/v2 v2.24.1
 )
 
@@ -40,6 +39,7 @@ require (
 	github.com/vmihailenco/msgpack/v4 v4.3.12 // indirect
 	github.com/vmihailenco/tagparser v0.1.1 // indirect
 	github.com/zclconf/go-cty v1.12.1 // indirect
+	golang.org/x/exp v0.0.0-20240103183307-be819d1f06fc // indirect
 	golang.org/x/net v0.0.0-20211112202133-69e39bad7dc2 // indirect
 	golang.org/x/sys v0.0.0-20220503163025-988cb79eb6c6 // indirect
 	golang.org/x/text v0.3.7 // indirect
