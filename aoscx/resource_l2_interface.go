@@ -240,7 +240,8 @@ func resourceL2InterfaceUpdate(ctx context.Context, d *schema.ResourceData, m in
 	}
 
 	if d.HasChange("vlan_ids") {
-		tmp_l2_int.VlanIds = d.Get("vlan_ids").([]interface{})
+		tmp_set := d.Get("vlan_ids").(*schema.Set)
+		tmp_l2_int.VlanIds = tmp_set.List()
 	}
 
 	if d.HasChange("trunk_allowed_all") {
