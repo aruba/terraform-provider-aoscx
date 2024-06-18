@@ -42,9 +42,12 @@ func Provider() *schema.Provider {
 			},
 		},
 		ResourcesMap: map[string]*schema.Resource{
-			"aoscx_vlan":         resourceVlan(),
-			"aoscx_interface":    resourceInterface(),
-			"aoscx_l2_interface": resourceL2Interface(),
+			"aoscx_vlan":           resourceVlan(),
+			"aoscx_interface":      resourceInterface(),
+			"aoscx_l2_interface":   resourceL2Interface(),
+			"aoscx_l3_interface":   resourceL3Interface(),
+			"aoscx_vlan_interface": resourceVlanInterface(),
+			"aoscx_full_config":    resourceFullConfig(),
 		},
 		ConfigureContextFunc: providerConfigure,
 	}
